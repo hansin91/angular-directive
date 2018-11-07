@@ -8,10 +8,18 @@ import { CartSummaryComponent } from '../cart-summary/cart-summary.component';
 import { CartDetailComponent } from '../cart-detail/cart-detail.component';
 import { CheckoutComponent } from '../checkout/checkout.component';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @NgModule({
 	imports: [ ModelModule, BrowserModule, FormsModule, RouterModule ],
-	declarations: [ StoreComponent, CounterDirective, CartSummaryComponent, CartDetailComponent, CheckoutComponent ],
+	declarations: [
+		StoreComponent,
+		CounterDirective,
+		CartSummaryComponent,
+		CartDetailComponent,
+		CheckoutComponent,
+		NavbarComponent
+	],
 	exports: [ StoreComponent, CartDetailComponent, CheckoutComponent ]
 })
 export class StoreModule {}
