@@ -62,7 +62,7 @@ export class RestDataSource {
 	}
 
 	updateOrder(order: Order): Observable<Order> {
-		return this.http.put<Order>(`${this.baseUrl}orders/${order.id}`, this.getOptions());
+		return this.http.put<Order>(`${this.baseUrl}orders/${order.id}`, order, this.getOptions());
 	}
 
 	private getOptions() {

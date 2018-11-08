@@ -29,7 +29,7 @@ export class OrderRepository {
 
 	updateOrder(order: Order) {
 		this.dataSource.updateOrder(order).subscribe((order) => {
-			this.orders.splice(this.orders.findIndex((o) => o.id === order.id), 1, order);
+			this.orders.splice(this.orders.findIndex((o) => o.id == order.id), 1, order);
 		});
 	}
 
